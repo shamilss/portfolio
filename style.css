@@ -1,0 +1,290 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: "Anek Devanagari", sans-serif;
+}
+#container{
+    width: 100%;
+    height: 100vh;
+    /* 100vh - uses full length of the screen and varies from screen to screen. */
+    position: relative;
+
+}
+#navbar{
+    display: flex;
+    width: 85%;
+    margin-left: 100px;
+    justify-content: space-between;
+    align-items: center;
+}
+#logo{
+    width: 125px;
+}
+.listitem{
+    display: inline-block;
+    margin: 5px 20px;
+    list-style: none;
+
+}
+.listitem a{
+    text-decoration: none;
+    color: black;
+    font-size: large;
+    font-weight: 500;
+
+}
+.listitem a:hover{
+    color: red;
+}
+/* section{
+    display: flex;
+    justify-content: space-between;
+} */
+
+#sec1{
+    margin-top: 200px;
+    margin-left: 300px;
+
+}
+#sec1 h1{
+    font-size: 50px;
+    font-weight:750;
+    margin-bottom: 5px;
+}
+#sec1 a{
+    text-decoration: none;
+    font-size: larger;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    padding: 5px 20px;
+}
+#sec1 a:hover{
+    color: aqua;
+}
+#sec1 p{
+    font-size: large; 
+    margin-bottom: 15px;
+
+}
+#last{
+    color: orange;
+}
+
+#sec2{
+    width: 45%;
+    height: 75%;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+}
+.img1{
+    position: absolute;
+    height: 100%;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: bottom 1s , left 2s;
+}
+
+#sec2:hover #img3{
+    bottom: 70px;
+}
+#sec2:hover #img4{
+    left: 40%;
+}
+#about{
+    margin: 15% 8% 0% 8%;
+}
+.heading{
+text-align: center;
+}
+.heading h1{
+    font-size: 40px;
+    margin-bottom: -10px;
+}
+.heading span{
+    font-size: 23px;
+    color: green;
+}
+
+#aboutcontent{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 75px;
+    margin-top: 50px;
+}
+
+#aboutimg img{
+    width: 85%;
+}
+#aboutdet p{
+    font-size: 18px;
+    text-align: justify;
+}
+#information{
+    margin-top: 30px;
+}
+.infobox{
+    margin: 1rem 0;
+
+}
+
+.infobox span{
+    margin-left: 1rem;
+    font-size: 18px;
+}
+
+#aboutskills{
+    text-align: center;
+}
+#aboutskills h1{
+    font-size: 40px;
+    margin-bottom: -10px;
+}
+#aboutskills span{
+    color: green;
+    font-size: 20px;
+}
+
+#skillsection{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 75px;
+    margin-top: 2rem;
+}
+
+#skillimg img{
+    width: 90%;
+    margin-left: 50px;
+}
+
+#skills{
+    margin: 5% 8% 0% 8% ;
+}
+
+.barcontain{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    padding: 20px 0px;
+
+}
+.barcontain span{
+    font-size: 18px;
+    font-weight: 800px;
+
+}
+#htmlspan{
+    margin-left: 550px;
+}
+
+.basebar{
+    width: 100%;
+    background-color: black;
+    height: 0.5rem;
+    border-radius: 0.5rem;
+    position: absolute;
+    bottom: 0px;
+}
+
+#htmlbar{
+    width: 95%;
+    background-color: orange;
+}
+#cssbar{
+    width: 88%;
+    background-color: orange;
+}
+#jsbar{
+    width: 89%;
+    background-color: orange;
+}
+#reactbar{
+    width: 85%;
+    background-color: orange;
+}
+
+#icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4%;
+}
+
+#contacts{
+    text-align: center;
+}
+#contacts h1{
+    font-size: 40px;
+    margin-bottom: -10px;
+}
+#contacts span{
+    color: green;
+    font-size: 20px;}
+
+    .iconclss, #uparrow{
+        width: 50px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin:0 20px;
+        border-radius: 50%;
+        
+    }
+    .iconclss:hover{
+        background-image: linear-gradient(to bottom right,yellow,rgb(222, 133, 7));
+    }
+    .iconclss a{
+        color: black;
+    }
+    .iconclss:hover a{
+        color: white;
+    }
+
+    .iconclss:hover i{
+        animation: shake 0.3s;
+    }
+    @keyframes shake {
+        20%{
+            transform: rotate(15deg);
+
+        }
+        40%{
+            transform: rotate(-15deg);
+        }
+        60%{
+            transform: rotate(15deg);
+
+        }
+        80%{
+            transform: rotate(-15deg);
+        }
+        
+    }
+    footer{
+        padding: 4rem 0;
+    }
+
+    footer p{
+        font-size: large;
+        text-align: center;
+        font-weight: 200%;
+
+    }
+#uparrow{
+    background-image: linear-gradient(to bottom right,yellow,rgb(222, 133, 7));
+    float: right;
+}
+
+#uparrow a{
+    color: black;
+}
+#uparrow:hover a{
+    color: white;
+}
+
+html{
+    scroll-behavior: smooth;
+}
